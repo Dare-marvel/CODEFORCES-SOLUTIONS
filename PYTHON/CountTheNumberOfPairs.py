@@ -46,3 +46,30 @@ for _ in range(t):
     
     # print the total number of pairs that can be removed for this test case
     print(burl)
+
+    
+    
+# Improved Code:
+t = int(input())
+for _ in range(t):
+    n, k = map(int, input().split())
+    newL = list(input().strip())  # strip() added to remove trailing whitespace
+    burDict = {}
+    burl = 0
+    for let in set(newL):
+        burDict[let] = newL.count(let)
+    for char in burDict:
+        if char.swapcase() in burDict:
+            if burDict[char] > 0 and burDict[char.swapcase()] > 0:
+                # Directly adding the minimum number of pairs to the count of burls
+                pairs_to_add = min(burDict[char],burDict[char.swapcase()])
+                burl += pairs_to_add
+                burDict[char] -= pairs_to_add
+                burDict[char.swapcase()] -= pairs_to_add
+                
+    for i in burDict:
+        if burDict[i] > 1 and k > 0:
+            pairs_to_add = min(burDict[i] // 2, k)
+            burl += pairs_to_add
+            k -= pairs_to_add
+    print(burl)
