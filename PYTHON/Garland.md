@@ -1,11 +1,13 @@
-# Link to the problem : https://codeforces.com/problemset/problem/1809/A
+### [Garland](https://codeforces.com/problemset/problem/1809/A)
 
 # Key Insight : 
-# This code calculates the answer purely on observation as we can see here , when all the four digits in the input string are same ,
-# We can't turn on all the bulbs and so we return -1
-# Also if the maximum frequency is 1 or 2 , we need only 4 switches as per observation
-# If the maximum frequency is 4 , we need 6 switches again as per observation
+This code calculates the answer purely on observation as we can see here , when all the four digits in the input string are same ,<br>
+We can't turn on all the bulbs and so we return -1<br>
+Also if the maximum frequency is 1 or 2 , we need only 4 switches as per observation<br>
+If the maximum frequency is 4 , we need 6 switches again as per observation<br>
 
+## Code :
+```python
 # Take an integer input t - the number of test cases
 t = int(input())
 
@@ -37,3 +39,4 @@ for i in range(t):
         # If the maximum frequency is 3 or more, then the answer is 6
         else:
             print('6')
+```
