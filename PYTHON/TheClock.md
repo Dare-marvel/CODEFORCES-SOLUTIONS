@@ -1,9 +1,11 @@
-# Link : https://codeforces.com/problemset/problem/1692/D
+### [The Clock](https://codeforces.com/problemset/problem/1692/D)
 
-# Key Insights : We use the datetime object to reduce complications while adding time
-# In the while loop we add time and check whether the string is palindromic or not until the newTime is not equal to currentTime
+## Key Insights : 
+We use the datetime object to reduce complications while adding time
+In the while loop we add time and check whether the string is palindromic or not until the newTime is not equal to currentTime
 
-# Code : 
+## Code : 
+```python
 from datetime import datetime, timedelta 
 
 # read the number of test cases
@@ -36,3 +38,4 @@ for i in range(t):
     
     # print the number of palindromic times
     print(count)
+```
