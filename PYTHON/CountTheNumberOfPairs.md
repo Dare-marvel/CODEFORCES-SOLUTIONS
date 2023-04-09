@@ -1,10 +1,10 @@
 ### [Count The Number of Pairs](https://codeforces.com/problemset/problem/1800/B)
 
-## Key Insight : 
-First we subtract the minimum frequency of the character and it's counterpart swapped case character(if it exists)
-Then we check whether any charcter has frequency more than one so that the case of one of them can be swapped and we can get a pair
-Also we need to check that we don't exceed the number of operation provided i.e. value of k , so we take the minimum of k and the 
-calculated value ( we divide the frequency by 2 because 2 characters make one pair ) and we are interested in the number of pairs
+## Key Insights : 
+First we subtract the minimum frequency of the character and it's counterpart swapped case character(if it exists)<br>
+Then we check whether any charcter has frequency more than one so that the case of one of them can be swapped and we can get a pair<br>
+Also we need to check that we don't exceed the number of operation provided i.e. value of k , so we take the minimum of k and the<br> 
+calculated value ( we divide the frequency by 2 because 2 characters make one pair ) and we are interested in the number of pairs<br>
 
 ## Code :
 ```python
