@@ -1,15 +1,16 @@
-### [Link](https://codeforces.com/problemset/problem/1811/E)
+### [Living Sequence](https://codeforces.com/problemset/problem/1811/E)
 
 ## Key Insights : 
-For solving problems related to sequences use the following site : [OEIS](https://oeis.org/)
-Here we can as there are only 9 different types of numbers in the number system , it's a number system of base 9
-Hence as per the logic given on site : 
-FORMULA:
-a(n) = replace digits d > 3 by d + 1 in base-9 representation of n - 1.
-Hence we first convert the given index to a number to the base 9
-and then we replace each digit greater than 3 by (digit + 1)
+For solving problems related to sequences use the following site : [OEIS](https://oeis.org/)<br>
+Here we can as there are only 9 different types of numbers in the number system , it's a number system of base 9<br>
+Hence as per the logic given on site : <br>
+FORMULA:<br>
+### a(n) = replace digits d > 3 by d + 1 in base-9 representation of n - 1.<br>
+Hence we first convert the given index to a number to the base 9<br>
+and then we replace each digit greater than 3 by (digit + 1)<br>
 
 ## Code :
+```python
 def decimalTobase9(num):
     digits = []
     if num == 0:
@@ -31,4 +32,5 @@ def convLiveSeq():
 
 t = int(input())  # read number of test cases from user
 for _ in range(t):  # loop through each test case
-    convLiveSeq()  # call previously defined function to convert and print the live sequence for each test case
+    convLiveSeq()  # call previously defined function to print the number at the desired index in the live sequence
+```
