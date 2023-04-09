@@ -1,12 +1,13 @@
-# Link : https://codeforces.com/problemset/problem/1791/G1
+### [Teleporters (Easy Version)](https://codeforces.com/problemset/problem/1791/G1)
 
-# Key Insights : 
-# Add the respective indexes starting from 1 to each value of cost of teleportation list
-# Sort the list 
-# Find the minimum sum less than or equal to number of coins we have from the list
+## Key Insights : 
+Add the respective indexes starting from 1 to each value of cost of teleportation list<br>
+Sort the list <br>
+Find the minimum sum less than or equal to number of coins we have from the list<br>
 
 
-# Code :
+## Code :
+```python
 # Read the number of test cases
 t = int(input())
 
@@ -16,7 +17,7 @@ for _ in range(t):
     # Read the input values
     n, c = map(int, input().split())
 
-    # Read the teleValues and add their corresponding index values
+    # Read the values at which teleporters are present and set their indices accordingly starting from 1
     teleValue = list(map(int, input().split()))
     for i, num in enumerate(teleValue):
         teleValue[i] += (i+1)
@@ -34,3 +35,4 @@ for _ in range(t):
 
     # Print the number of teleports used
     print(i)
+ ```
