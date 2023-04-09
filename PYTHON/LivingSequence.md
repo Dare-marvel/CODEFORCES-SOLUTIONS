@@ -1,8 +1,15 @@
-# Link : https://codeforces.com/problemset/problem/1811/E
+### [Link](https://codeforces.com/problemset/problem/1811/E)
 
-# Key Insights :
+## Key Insights : 
+For solving problems related to sequences use the following site : [OEIS](https://oeis.org/)
+Here we can as there are only 9 different types of numbers in the number system , it's a number system of base 9
+Hence as per the logic given on site : 
+FORMULA:
+a(n) = replace digits d > 3 by d + 1 in base-9 representation of n - 1.
+Hence we first convert the given index to a number to the base 9
+and then we replace each digit greater than 3 by (digit + 1)
 
-# Code :
+## Code :
 def decimalTobase9(num):
     digits = []
     if num == 0:
