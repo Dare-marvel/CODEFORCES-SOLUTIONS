@@ -35,7 +35,4 @@ for _ in range(t):
     # Print the elements of a on a single line, separated by spaces
     for element in a:
         print(element,end=" ")
-    
-    # Print a newline character to separate the test cases
-    print()
 ```
