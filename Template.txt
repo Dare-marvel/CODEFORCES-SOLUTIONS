@@ -5,9 +5,9 @@
 ## Key Insights:
 
 ## Time and Space Complexity:
-`Time Complexity`:
+### `Time Complexity`:
 
-`Space Complexity`:
+### `Space Complexity`:
 
 ## Code:
 ```
