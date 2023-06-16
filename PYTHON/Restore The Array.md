@@ -5,12 +5,10 @@ The first element and the last element of the result is the same as input array<
 Rest elements are calculated using min of the current element and the previous element<br>
 
 ## Time and Space Complexity:
-`Time complexity:`
-
+### `Time complexity:`
 The for loop that constructs the new list a by finding the minimum of adjacent values runs n-2 times, so its time complexity is O(n).<br>
 
-`Space complexity:`
-
+### `Space complexity:`
 The space used by the program is dominated by the lists b and a, which each take up O(n) space.<br>
 Therefore, the overall space complexity of the code is O(n).<br>
 
