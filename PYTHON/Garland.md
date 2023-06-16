@@ -1,6 +1,6 @@
 ### [Garland](https://codeforces.com/problemset/problem/1809/A)
 
-# Key Insight : 
+## Key Insight : 
 This code calculates the answer purely on observation as we can see here , when all the four digits in the input string are same ,<br>
 We can't turn on all the bulbs and so we return -1<br>
 Also if the maximum frequency is 1 or 2 , we need only 4 switches as per observation<br>
